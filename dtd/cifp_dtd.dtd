@@ -1,0 +1,64 @@
+
+<!ELEMENT cifp (alumne*, profesor*)>
+
+<!-- Definimos los elementos de alumne y profesor dejando entre paréntesis los elementos comunes a ambos -->
+
+<!ELEMENT alumne ((nom, llinatges, data_naixement?, correu?, telefon?, adreça?), data_matricula, curs)>
+<!ATTLIST alumne id ID #REQUIRED>
+
+<!ELEMENT profesor ((nom, llinatges, data_naixement?, correu?, telefon?, adreça?), data_incorporacio, departament, assignatura*)>
+<!ELEMENT assignatura (nom_assignatura, data_inici?, data_final?)>
+
+<!ATTLIST profesor id ID #REQUIRED>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT llinatges (#PCDATA)>
+<!ELEMENT data_naixement (#PCDATA)>
+<!ELEMENT correu (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT adreça (#PCDATA)>
+
+<!-- Definimos los elementos  específicos de alumne  -->
+<!ELEMENT data_matricula (#PCDATA)>
+<!ELEMENT curs (#PCDATA)>
+<!ATTLIST curs tipo (DAM|DAW|ASIX|SMX|SEIA|ER|AUT) #REQUIRED>
+
+<!-- Definimos los elementos  específicos de profesor  -->
+<!ELEMENT data_incorporacio (#PCDATA)>
+<!ELEMENT departament (#PCDATA)>
+<!ATTLIST departament tipo (informatica|electricitat|automocio) #REQUIRED>
+
+<!ATTLIST assignatura id_assignatura ID  #REQUIRED>
+<!ELEMENT nom_assignatura (#PCDATA)>
+<!ATTLIST nom_assignatura cicle (DAM|DAW|ASIX|SMX|SEIA|ER|AUT) #REQUIRED>
+<!ELEMENT data_inici (#PCDATA)>
+<!ELEMENT data_final (#PCDATA)>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
