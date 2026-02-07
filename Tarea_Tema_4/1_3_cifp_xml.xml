@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<cifp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="1_3_XSD.xsd">  <!--Indicamos donde se encuentra el esquema de CIFP-->
+
+    <alumne id = "1">
+      <nom></nom>
+      <llinatges></llinatges>
+		  <data_naixement></data_naixement>
+		  <adreça></adreça>
+		  <data_matricula></data_matricula>
+		  <curs >DAW</curs>
+    </alumne>
+    
+    <profesor id = "P2">
+      <nom></nom>
+	  <llinatges></llinatges>
+	  <data_naixement></data_naixement>
+	  <adreça></adreça>
+	  <data_incorporacio></data_incorporacio>
+	  <departament >INFORMATICA</departament>
+	  
+	  
+	  
+	  <assignatura id_assignatura="23">
+		  <nom_assignatura cicle="DAM"></nom_assignatura>
+		  <data_inici></data_inici>
+		  <data_final></data_final>
+	  </assignatura>
+    </profesor>
+       
+</cifp>
