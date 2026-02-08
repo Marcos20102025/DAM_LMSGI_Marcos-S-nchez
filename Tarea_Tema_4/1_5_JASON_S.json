@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Esquema CIFP",
+  "type": "object",
+  "properties": {
+    "cifp": {
+      "type": "object",
+      "properties": {
+        "alumne": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "nom": { "type": "object" },
+            "llinatges": { "type": "object" },
+            "data_naixement": { "type": "object" },
+            "adreça": { "type": "object" },
+            "data_matricula": { "type": "object" },
+            "curs": {
+              "type": "object",
+              "properties": {
+                "tipo": { "type": "string" }
+              },
+              "required": ["tipo"]
+            }
+          },
+          "required": ["id", "nom", "llinatges", "curs"]
+        },
+        "profesor": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "nom": { "type": "object" },
+            "llinatges": { "type": "object" },
+            "data_naixement": { "type": "object" },
+            "adreça": { "type": "object" },
+            "data_incorporacio": { "type": "object" },
+            "departament": {
+              "type": "object",
+              "properties": {
+                "tipo": { "type": "string" }
+              },
+              "required": ["tipo"]
+            },
+            "assignatura": {
+              "type": "object",
+              "properties": {
+                "id_assignatura": { "type": "string" },
+                "nom_assignatura": {
+                  "type": "object",
+                  "properties": {
+                    "cicle": { "type": "string" }
+                  },
+                  "required": ["cicle"]
+                },
+                "data_inici": { "type": "object" },
+                "data_final": { "type": "object" }
+              },
+              "required": ["id_assignatura", "nom_assignatura"]
+            }
+          },
+          "required": ["id", "departament", "assignatura"]
+        }
+      },
+      "required": ["alumne", "profesor"]
+    }
+  },
+  "required": ["cifp"]
+}

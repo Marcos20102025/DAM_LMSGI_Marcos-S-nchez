@@ -1,0 +1,34 @@
+{
+    "cifp": {
+        "alumne": {
+            "id": "1",
+            "nom": {},
+            "llinatges": {},
+            "data_naixement": {},
+            "adreça": {},
+            "data_matricula": {},
+            "curs": {
+                "tipo": "DAM"
+            }
+        },
+        "profesor": {
+            "id": "2",
+            "nom": {},
+            "llinatges": {},
+            "data_naixement": {},
+            "adreça": {},
+            "data_incorporacio": {},
+            "departament": {
+                "tipo": "informatica"
+            },
+            "assignatura": {
+                "id_assignatura": "L3",
+                "nom_assignatura": {
+                    "cicle": "DAM"
+                },
+                "data_inici": {},
+                "data_final": {}
+            }
+        }
+    }
+}
